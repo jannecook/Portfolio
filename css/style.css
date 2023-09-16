@@ -1,5 +1,6 @@
 :root {
-    --
+    --lightText: rgb(255, 228, 196);
+    --borderColor: rgb(138, 154, 189);
 }
 * {
    box-sizing: border-box;
@@ -11,7 +12,33 @@ body {
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px;
-    text-align: left;
-    background: #411edf
+    background: #2c1788;
+}
+
+.photo {
+    border: 3px solid var(--borderColor);
+    border-radius: 15%;
+    width: 100px;
+}
+
+h1 {
+    color: var(--lightText);
+    font-size: 48px;
+}
+a {
+    color: var(--lightText);
+}
+
+.internalLinks ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    border: 20px, solid, var(--borderColor);
+    text-align: center;
+    background: #4648b4;
 }
