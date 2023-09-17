@@ -68,9 +68,23 @@ a {
     border: 5px solid var(--darkBorderColor);
     text-align: center;
     background: var(--lightBackground);
-    color: var(--darkText)
+    color: var(--darkText);
 }
-
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#accessible_website {
+    max-width: 100%
+}
+#group_project {
+    max-width: 40%
+}
+#placeholder {
+    max-width: 40%
+}
 #contact-information{
     text-align: center;
 }
