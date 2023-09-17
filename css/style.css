@@ -1,5 +1,10 @@
 :root {
-    --
+    --lightText: rgb(255, 228, 196);
+    --darkText: rgb(8, 8, 56);
+    --lightBorderColor: rgb(138, 154, 189);
+    --darkBorderColor: rgb(78, 94, 146);
+    --lightBackground: rgb(231, 231, 243);
+    --darkBackground: rgb(57, 56, 86);
 }
 * {
    box-sizing: border-box;
@@ -11,7 +16,75 @@ body {
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px;
-    text-align: left;
-    background: #411edf
+    background: var(--darkBackground);
+}
+
+.photo {
+    border: 3px solid var(--lightBorderColor);
+    border-radius: 15%;
+    width: 100px;
+}
+
+h1 {
+    color: var(--lightText);
+    font-size: 48px;
+    align-self: flex-end;
+}
+a {
+    color: var(--darkText);
+}
+
+.internalLinks ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    border: 5px solid var(--darkBorderColor);
+    text-align: center;
+    background: var(--lightBackground);
+    font-size: 20px;
+}
+
+.portfolioInfo {
+    font-size: 16px;
+}
+
+#about-me, #contact-information {
+    margin: 10px, 0px, 10px, 0px;
+    background: var(--darkBackground);
+    color: var(--lightText)
+}
+
+#my-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    border: 5px solid var(--darkBorderColor);
+    text-align: center;
+    background: var(--lightBackground);
+    color: var(--darkText);
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#accessible_website {
+    max-width: 100%
+}
+#group_project {
+    max-width: 40%
+}
+#placeholder {
+    max-width: 40%
+}
+#contact-information{
+    text-align: center;
 }
