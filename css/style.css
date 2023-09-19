@@ -1,3 +1,4 @@
+/* setting variables for the text, borders, background, and padding */
 :root {
     --lightText: rgb(255, 228, 196);
     --darkText: rgb(8, 8, 56);
@@ -7,22 +8,19 @@
     --darkBackground: rgb(57, 56, 86);
     --thinPadding: 10px;
 }
+
 * {
    box-sizing: border-box;
    padding: 0;
    margin: 0;
 }
-body {
-
-}
 
 header {
-    display: flex;
-    flex-wrap: wrap;
     padding: var(--thinPadding);
     background: var(--darkBackground);
 }
 
+/* formatting for headshot photo */
 .photo {
     border: 3px solid var(--lightBorderColor);
     border-radius: 15%;
@@ -34,10 +32,12 @@ h1 {
     font-size: 48px;
     align-self: flex-end;
 }
+
 a {
     color: var(--darkText);
 }
 
+/* Element formatted as a flex-box */
 .internalLinks ul {
     display: flex;
     flex-direction: row;
@@ -60,7 +60,7 @@ a {
     color: var(--lightText)
 }
 
-#myWork {
+#myWork, #contact-information {
     text-align: center;
 }
 .projectName {
@@ -78,6 +78,7 @@ a {
     width: 100%;
 }
 
+/* Element formatted as a flex-box */
 .additionalProjects {
     display: flex;
     flex-direction: row;
@@ -89,6 +90,7 @@ a {
     background: var(--lightBackground);
     max-width: 100%;
 }
+
 #project_2, #project_3, #project_4 {
     max-width: 50%;
 }
@@ -97,10 +99,7 @@ a {
     width: 100%;
 }
 
-#contact-information{
-    text-align: center;
-}
-
+/* media query directing size of flex-box elements when there is a smaller screen */
 @media screen and (max-width: 720px) {
     #project_2, #project_3, #project_4 {
         width: 33%;
