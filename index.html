@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
@@ -21,30 +22,36 @@
         </nav>
         <section class="portfolioInfo">
             <div id="about-me">
-                <h2>About Me</h2>
+                <h2><u>About Me</u></h2>
                 <p>
                     I am currently studying to become a full stack developer. I have worked as a math teacher and as an attorney. I am excited about this next step in my career development.
                 </p>
             </div>
             <div id="my-work">
-                <h2>My Work</h2>
-                    <div class="projects">
+                <h2 id="myWork">My Work</h2>
+                    <div class="firstProject">
                         <div id="project_1">
-                            <li><a href=https://jannecook.github.io/Accessible_webpage_challenge_1>Accessible Webpage Project</a></li>
-                            <img src="./images/accessible_website_project.jpeg" id="accessible_website" alt="screenshot of project" />
+                            <p class="projectName">Accessible Webpage Project</p>
+                            <a href=https://jannecook.github.io/Accessible_webpage_challenge_1><img src="./images/accessible_website_project.jpeg" id="accessibleWebsite" alt="screenshot of project"/></a>
                         </div>
+                    </div>
+                    <div class="additionalProjects">
                         <div id="project_2">
-                            <li><a href=https://mikewentforth.github.io/quiet-diet>Group Project Application</a></li>
-                            <img src="./images/group_project_application.jpeg" id="group_project" alt="screenshot of group project" />
+                            <p class="projectName">Group Project Application</p>
+                            <a href=https://mikewentforth.github.io/quiet-diet><img src="./images/group_project_application.jpeg" id="groupProject" alt="screenshot of group project"/></a>
                         </div>
                         <div id="project_3">
-                            <li><a href="#placeholder">Placeholder</a></li>
-                            <img src="./images/placeholder.jpeg" id="placeholder" alt="screenshot of group project" />
+                            <p class="projectName">Placeholder 1</p>
+                            <a href="#placeholder1"><img src="./images/placeholder.jpeg" id="placeholder1" alt="Placeholder image"/></a>
+                        </div>
+                        <div id="project_4">
+                            <p class="projectName">Placeholder 2</p>
+                            <a href="#placeholder2"><img src="./images/placeholder.jpeg" id="placeholder2" alt="Placeholder image"/></a>
                         </div>
                     </div>
             </div>   
             <div id="contact-information">
-                <h3>Contact Information</h3>
+                <h3><u>Contact Information</u></h3>
                     <p>email: jeanacook2023@gmail.com</p>
             </div>
         </section>

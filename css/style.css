@@ -5,6 +5,7 @@
     --darkBorderColor: rgb(78, 94, 146);
     --lightBackground: rgb(231, 231, 243);
     --darkBackground: rgb(57, 56, 86);
+    --thinPadding: 10px;
 }
 * {
    box-sizing: border-box;
@@ -18,7 +19,7 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: var(--thinPadding);
     background: var(--darkBackground);
 }
 
@@ -42,7 +43,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px;
+    padding: var(--thinPadding);
     border: 5px solid var(--darkBorderColor);
     text-align: center;
     background: var(--lightBackground);
@@ -50,7 +51,7 @@ a {
 }
 
 .portfolioInfo {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #about-me, #contact-information {
@@ -59,32 +60,49 @@ a {
     color: var(--lightText)
 }
 
-#my-work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
+#myWork {
+    text-align: center;
+}
+.projectName {
+    font-size: 16px;
+}
+.firstProject {
+    width: 100%;
+    padding: var(--thinPadding);
     border: 5px solid var(--darkBorderColor);
     text-align: center;
     background: var(--lightBackground);
-    color: var(--darkText);
 }
-.projects {
+
+#accessibleWebsite {
+    width: 100%;
+}
+
+.additionalProjects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: var(--thinPadding);
+    border: 5px solid var(--darkBorderColor);
+    text-align: center;
+    background: var(--lightBackground);
+    max-width: 100%;
 }
-#accessible_website {
-    max-width: 100%
+#project_2, #project_3, #project_4 {
+    max-width: 50%;
 }
-#group_project {
-    max-width: 40%
+
+#groupProject, #placeholder1, #placeholder2 {
+    width: 100%;
 }
-#placeholder {
-    max-width: 40%
-}
+
 #contact-information{
     text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    #project_2, #project_3, #project_4 {
+        width: 33%;
+    }
 }
